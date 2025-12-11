@@ -57,12 +57,9 @@ cd api
 npm install
 ```
 
-Create a `.env` file in the `api` folder:
-
-```env
-DATABASE_URL="mongodb+srv://USERNAME:PASSWORD@cluster.xxxxx.mongodb.net/sakhli"
-JWT_SECRET="your-secret-key-here"
-```
+Create a `.env` file in the `api` folder with:
+- `DATABASE_URL` - Your MongoDB connection string
+- `JWT_SECRET` - A secret key for JWT tokens
 
 Run the server:
 
