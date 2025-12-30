@@ -1,24 +1,25 @@
 {
-  "name": "api",
+  "name": "sakhli-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "SAKHLI Real Estate App - Backend API",
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["real-estate", "mern", "api"],
+  "author": "Sandro",
+  "license": "MIT",
   "dependencies": {
     "@prisma/client": "^5.22.0",
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
-    "jsonwebtoken": "^9.0.3",
-    "mongodb": "^7.0.0",
+    "jsonwebtoken": "^9.0.3"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.11",
     "prisma": "^5.22.0"
   }

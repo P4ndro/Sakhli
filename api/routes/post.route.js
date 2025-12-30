@@ -1,11 +1,9 @@
 import express from 'express';
 
-
-
 const router = express.Router();
 
 router.get("/", (req, res) => {
-    res.send("Test Post Route");
+    res.send("Posts route works!");
 });
 
 export default router;

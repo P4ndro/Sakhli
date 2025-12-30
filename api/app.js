@@ -1,17 +1,23 @@
 import express from 'express';
 import cookieParser from 'cookie-parser';
-import postRoutes from './routes/post.route.js';
+import dotenv from 'dotenv';
 import authRoute from './routes/auth.route.js';
+import postRoutes from './routes/post.route.js';
+
+dotenv.config();
 
 const app = express();
 
+// Middleware
 app.use(express.json());
 app.use(cookieParser());
 
-
-app.listen(8800, () => {
-    console.log("Server is running successfully");
-});
-
+// Routes
+app.use("/api/auth", authRoute);
 app.use("/api/posts", postRoutes);
-app.use("/api/auth", authRoute);   
+
+// Start server
+const PORT = process.env.PORT || 8800;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
