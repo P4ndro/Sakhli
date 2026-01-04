@@ -31,7 +31,7 @@ function Filter() {
                     </input>
                 </div>
                 <button>
-                    <img src="/.search.png" alt= "srch"/>                       
+                    <img src="./search.png" alt= "srch"/>                       
                 </button>
                 </div>
             </div>
