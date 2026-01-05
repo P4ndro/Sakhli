@@ -5,6 +5,7 @@ import Card from "../../components/card/card";
 
 function ListPage() {
     const data = listData;
+    
     return (
         <div className="listPage">
         
@@ -13,6 +14,7 @@ function ListPage() {
                 <Filter />
                 {data.map(item=>(
                     <Card key={item.id} item={item} />
+
                 ))}
             </div>
         </div>

@@ -13,12 +13,15 @@ function Filter() {
                 <div className="item">
                 <label htmlFor="type">type</label>
                 <select name="type" id= "Type">
+                    <option value="">Any</option>
                     <option value="Buy">Buy</option>
                     <option value="Rent">Rent</option>
                 </select>
+                </div>
                 <div className="item">
-                    <label  htmlfor="property">Property</label>
+                    <label  htmlFor="property">Property</label>
                     <select name="property" id= "property">
+                        <option value="">Any</option>
                         <option value="apartment">Apartment</option>
                         <option value="house">House</option>
                         <option value="condo">Condo</option>
@@ -26,15 +29,23 @@ function Filter() {
                     </select>
                 </div>
                 <div className="item">
-                    <label htmlfor = "minPrice">Min Price</label>
-                    <input type="number">
-                    </input>
+                    <label htmlFor = "minPrice">Min Price</label>
+                    <input type="number" id="minPrice" name="minPrice" placeholder="any"></input>
+                </div>
+
+                <div className="item">
+                    <label htmlFor = "maxPrice">Max Price</label>
+                    <input type="number" id="maxPrice" name="maxPrice" placeholder="any"></input>
+                </div>  
+                <div className="item">
+                    <label htmlFor = "bedroom">Bedroom</label>
+                    <input type="number" id="bedroom" name="bedroom" placeholder="any"></input>
                 </div>
                 <button>
                     <img src="./search.png" alt= "srch"/>                       
                 </button>
                 </div>
-            </div>
+            
         </div>
     )
 }
