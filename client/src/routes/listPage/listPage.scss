@@ -1,11 +1,12 @@
 .listPage{
   display: flex;
-  height: 100vh;
+  height: 100%;
 
   .listConatiner{
     flex: 3;
 
     .wrapper{
+      
         padding-right: 50px;
         display: flex;
         flex-direction: column;
