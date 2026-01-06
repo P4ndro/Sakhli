@@ -1,6 +1,6 @@
 import "./listPage.scss";
 import { listData } from "../../lib/dummydata";
-import Filter from "../../components/filter/filter";
+import Filter from "../../components/filter/Filter";
 import Card from "../../components/card/card";
 
 function ListPage() {
