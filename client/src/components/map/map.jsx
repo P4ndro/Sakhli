@@ -12,7 +12,7 @@ function Map() {
 
                 <Marker position={[51.505, -0.09]}>
                     <Popup>
-                        A pretty popup.
+                        A pretty popup with  julie.
                     </Popup>
                 </Marker>
             </MapContainer>
