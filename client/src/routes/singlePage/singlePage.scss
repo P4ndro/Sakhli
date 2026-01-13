@@ -17,6 +17,28 @@
     background-color: aliceblue;
     .wrapper{
         padding-left: 0px 20px;
+
+        .info{
+            .top{
+                .post{
+                    h1{}
+                
+                .address{}
+                .price{}
+                }
+                .user{
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .bottom{}
+
+        }
     }
    }
 }
