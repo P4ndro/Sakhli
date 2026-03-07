@@ -14,17 +14,19 @@ function SinglePage() {
                             <h1>{singlePostData.title}</h1>
                             
                              <div className="address">
-                              <img src="/gps.png" alt="gps" />
+                              <img src="/gps.png" alt="gps"  />
                                <span>{singlePostData.address}</span>
                              </div>
                            <div className="price"> $ {singlePostData.price} </div>
                         </div>
                      <div className="user">
-                        <img src={userData.img} alt="user" />
+                        <img src={userData.img} alt="user"  />
                         <span>{userData.name}</span>
                         </div>
                     </div>
-                 <div className="bottom"></div>
+                 <div className="bottom">
+                    {singlePostData.description}
+                 </div>
               </div>
             </div>
           </div>
