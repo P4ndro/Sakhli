@@ -1,6 +1,7 @@
 import "./singlePage.scss";
 import Slider from "../../components/slider/slider";
 import { singlePostData, userData } from "../../lib/dummydata";
+import Map from "../../components/map/map";
 
 function SinglePage() {
     return (
@@ -32,7 +33,67 @@ function SinglePage() {
           </div>
             <div className="features">
                 <div className="wrapper">
+                    <p className="title">General</p>
+                    <div className="listVertical">
+                        <div className="feature">
+                            <img src="/utility.png" alt="" />
+                            <div className="featureText">
+                                <span>Utilities</span>
+                                <p>Renter is responsible</p>
+                            </div>
 
+                        </div>
+                        <div className="feature">
+                            <img src="/pet.png" alt="" />
+                            <div className="featureText">
+                                <span>Pet Policy</span>
+                                <p>Pets are allowed</p>
+                            </div>
+
+                        </div>
+                        <div className="feature">
+                            <img src="/fee.png" alt="" />
+                            <div className="featureText">
+                                <span>Property Fee</span>
+                                <p>Must have 3x monthly rent in total household income</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <p className="title">
+                        <div className="size">
+                            <img src="/size.png" alt="" />
+                            <span>80 sqft</span>
+                        </div>
+                        <div className="size">
+                            <img src="/bed.png" alt="" />
+                            <span>beds</span>
+                        </div>
+                        <div className="size">
+                            <img src="/bath.png" alt="" />
+                            <span>bathroom</span>
+                        </div>
+                    </p>
+                    <div className="sizes"></div>
+                    <p className="title">Nearby Places</p>
+                    <p className="title">Location</p>
+                    <div className="mapContainer">
+                        <Map items={singlePostData}/>
+                    </div>
+                    <div className="buttons">
+                        <button>
+                            <img src="/chat.png" alt="" />
+                            send message
+                        </button>
+                        <button>
+                            <img src="/save.png" alt="" />
+                            Save The Place
+                        </button>
+                        
+
+                    </div>
+                   
                 </div>
             </div>
         </div>
