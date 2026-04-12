@@ -1,8 +1,11 @@
+@import "../../responsive.scss";
+
 .slider{
    width: 100%;
    height: 350px;
    display: flex;
    gap: 20px;
+  
 
 
    .fullSlider{
@@ -16,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    z-index: 9999;
 
 
     .arrow{
@@ -25,10 +28,20 @@
         align-items: center;
         justify-content: center;
 
+        
+
 
 
         img{
             width: 50px;
+            
+            @include md{
+            width: 30px;
+        }
+
+           @include sm{
+            width: 20px;
+        }
 
 
             &.right{
